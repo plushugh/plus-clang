@@ -7,7 +7,7 @@
 void swap_int (int *x, int *y)
 {
 	int temp = *x;
-	*x = *y
+	*x = *y;
 	*y = temp;
 }
 
@@ -49,11 +49,11 @@ int main(void)
 	}
 	sort(height, name, NUMBER);
 
-	puts("\n Ascending by height")；
+	puts("\n Ascending by height");
 	for (int i = 0; i < NUMBER; i++)
 	{
 		printf("%2d : %-8s%4d\n", i + 1, name[i], height[i]);
 	}
-	
+
 	return 0;
 }
