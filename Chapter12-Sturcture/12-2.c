@@ -12,7 +12,7 @@ struct student
 	long  schols;
 };
 
-int main()
+int main(void)
 {
 	struct student sanaka;
 
@@ -22,9 +22,9 @@ int main()
 	sanaka.schols = 73000;
 
 	printf("name = %s\n",   sanaka.name);
-	printf("height = %s\n", sanaka.height);
-	printf("weight = %s\n", sanaka.weight);
-	printf("schols = %s\n", sanaka.schols);
+	printf("height = %d\n", sanaka.height);
+	printf("weight = %.1f\n", sanaka.weight);
+	printf("schols = %1d\n", sanaka.schols);
 
 	return 0;
 }
