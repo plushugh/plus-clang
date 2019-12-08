@@ -22,5 +22,5 @@ int main(void)
     printf("integer A:%f\n",da);
     printf("integer B:%f\n",db);
 
-    return 0
+    return 0;
 }
