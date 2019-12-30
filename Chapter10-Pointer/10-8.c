@@ -23,4 +23,4 @@ int main(void)
     printf("integer B:%f\n",db);
 
     return 0;
-}
+    
