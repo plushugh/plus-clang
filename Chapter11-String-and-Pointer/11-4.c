@@ -3,7 +3,7 @@ int main(void)
 {
     int i;
     char a[][5] = {"LISP", "C", "ADA"};
-    char *p = {"PAUL", "X", "MAC"};
+    char *p[] = {"PAUL", "X", "MAC"};
 
     for (i = 0; i < 3; i++)
         printf("a[%d] = \"%s\"\n", i, a[i]);
