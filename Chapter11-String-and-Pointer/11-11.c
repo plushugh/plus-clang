@@ -4,6 +4,7 @@ int strcmp(const char *s1, const char *s2)
     {
         if (*s1 == '\0')
             return s1++;
+        s1++;
         s2++;
     }
 
