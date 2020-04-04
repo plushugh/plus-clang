@@ -8,10 +8,10 @@ int main(void)
 	
 	if (fp == NULL)
 		printf("\aCannot open the file 'abc'.");
-	else (
+	else {
 		printf("Successfully opened the file 'abc'.")
 	
 		fclose(fp);
-	)
+	}
 	return 0;
 }
