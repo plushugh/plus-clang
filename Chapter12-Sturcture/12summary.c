@@ -16,7 +16,7 @@ typedef struct {
 void print_Human(const Human *h)
 {
 	printf("%s (Birth date: Y:%04d M: %02d D: %02d) \n",
-			h->name, h->birthday.m, h->birthday.d);
+			h->name, h->birthday.y, h->birthday.m, h->birthday.d);
 }
 
 int main(void)
@@ -29,7 +29,7 @@ int main(void)
 		{"b", {1962, 11, 18}},
 		{"c", {1980, 11, 18}},
 	};
-	printf("enter today's date:\n")
+	printf("enter today's date:\n");
 	printf(" Year:"); scanf("%d", &today.y);
 	printf("Month:"); scanf("%d", &today.m);
 	printf("  Day:"); scanf("%d", &today.d);
