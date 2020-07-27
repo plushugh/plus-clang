@@ -28,8 +28,9 @@ int main()
     printf("%d\n", strl(str));
     for ( int i = 0; i < 10; i++)
     {
-    
+    printf("str2: %d\n",  strcm(str2, str) ); 
     strc(str2, str);
-    printf("str2: %s\n", str2);
+
+    printf("str2: %d\n",  strcm(str2, str) );
     }
 }
