@@ -2,20 +2,19 @@
 #include <string.h>
 #define MAXLINE 1000
 
-int getline(char *line, int max);
-
-main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
-    char line[MAXLINE];
+    char *lin = NULL;
     int found = 0;
+    size_t *linemax = MAXLINE;
 
     if (argc != 2)
         printf("Usage: find pattern\n");
     else
-        while(getline(line, MAXLINE) > 0)
-            if (strstr(line, argv[1]) != NULL)
+        while(getline(&lin, &linemax, stdin) > 0)
+            if (strstr(&lin, argv[1]) != NULL)
             {
-                printf("%s", line);
+                printf("%s", &lin);
                 found++;
             }
     return found;
