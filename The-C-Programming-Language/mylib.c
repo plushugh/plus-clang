@@ -135,3 +135,19 @@ void swap(int v[], int i, int j)
     v[i] = v[j];
     v[j] = tmp;
 }
+
+#define BUFSIZE 100
+char buf[BUFSIZE];
+int bufp = 0;
+
+int getch(void)
+{
+    return (bufp > 0) ? buf[--bufp] : getchar();
+}
+void ungetch(int c)
+{
+    if (bufp >= BUFSIZE)
+        printf("ungetch: too many characters\n");
+    else
+        buf[bufp++] = c;
+}
