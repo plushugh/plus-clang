@@ -1,7 +1,7 @@
  #! /bin/bash
 # Finds most recently updated c file in this dir, then compiles, runs, and deletes
 
-CFLAGS="-ansi -I$ROOT/include -Wall"
+CFLAGS="-ansi -Iinclude -Wall"
 
 TEMPFILES="core core.* *.o temp.* *.out"
 
