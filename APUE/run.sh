@@ -1,13 +1,12 @@
  #! /bin/bash
-# Finds most recently updated c file in this dir, then compiles, runs, and deletes
 
 CFLAGS="-ansi -Iinclude -Wall"
 
 TEMPFILES="core core.* *.o temp.* *.out"
 
-# Find most recently updated c file that  is not in include/ and lib/ directory
-cfile=$(find . -type f -not -path "./lib/*" -not -path "./include/*" -name "*.c" | sort -n | tail -1 | cut -d' ' -f2-)
-echo "Found $cfile"
+# get user input for c file
+echo "Enter the path of the c file you want to run (with .c):"
+read cfile
 
 # Compile lib
 echo "Compiling lib"
